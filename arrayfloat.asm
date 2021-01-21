@@ -18,7 +18,7 @@
 	
 .align 2
 	varword: .word main,case0,case1,case2
-	input: .asciiz "\n******** Select Subject *********\n[0] General Science\n[1] Computer Science\n[2] Islamait \nSelect Option :" 
+	input: .asciiz "\n******** Select Subject *********\n[0] General Science\n[1] Computer Science\n[2] Islamiat \nSelect Option :" 
 	msg_0: .asciiz "******* General Science MCQ'S *********" 
 	ganswer: .byte 'c','c','d','b','a'
 	gques1: .asciiz"\n\n1. What is the capital of Pakistan ?\n"
