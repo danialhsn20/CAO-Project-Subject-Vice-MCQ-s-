@@ -18,7 +18,7 @@
 	
 .align 2
 	varword: .word main,case0,case1,case2
-	input: .asciiz "\n******** Select Subject *********\n[0] General Science\n[1] Computer Science\n[2] Socail Studies\nSelect Option :" 
+	input: .asciiz "\n******** Select Subject *********\n[0] General Science\n[1] Computer Science\n[2] Islamait \nSelect Option :" 
 	msg_0: .asciiz "******* General Science MCQ'S *********" 
 	ganswer: .byte 'c','c','d','b','a'
 	gques1: .asciiz"\n\n1. What is the capital of Pakistan ?\n"
@@ -52,7 +52,7 @@
 	
 	
 	canswer: .byte 'a','d','b','d','a'
-	cques1: .asciiz"\n\n1. The term ëComputerí is derived from__________?\n"
+	cques1: .asciiz"\n\n1. The term ‚ÄòComputer‚Äô is derived from__________?\n"
 	cq1opa: .asciiz"a) Latin\n"
 	cq1opb: .asciiz"b) German\n"
 	cq1opc: .asciiz"c) French\n"
@@ -101,7 +101,7 @@
 	sq4opb: .asciiz"b) Prophet Dawood (A.S)\n"
 	sq4opc: .asciiz"c) Prophet Moosa (A.S)\n"
 	sq4opd: .asciiz"d) Prophet Essa (A.S)\n"
-	sques5: .asciiz"\n\n5. What companion of Prophet (PBUH) was awarded with the title of ìThe sword of Allahî?\n"
+	sques5: .asciiz"\n\n5. What companion of Prophet (PBUH) was awarded with the title of ‚ÄúThe sword of Allah‚Äù?\n"
 	sq5opa: .asciiz"a) Ali Al-Murtaza (R.A)\n"
 	sq5opb: .asciiz"b) Umar Farooque (R.A)\n"
 	sq5opc: .asciiz"c) Khalid bin Waleed (R.A)\n"
@@ -366,7 +366,7 @@ gEXIT:
 case1:
 
 li $v0,4
-la $a0, msg_0
+la $a0, msg_1
 syscall
 
 la $a0, cques1
@@ -562,7 +562,7 @@ cEXIT:
 case2:
 
 li $v0,4
-la $a0, msg_0
+la $a0, msg_2
 syscall
 # GS Mcq starts
 
